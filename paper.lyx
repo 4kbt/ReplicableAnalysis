@@ -69,10 +69,42 @@ Charles Hagedorn
 \end_layout
 
 \begin_layout Standard
-As a demonstration of replicable analysis software, a suitable toy example
- can be very instructive.
+As a demonstration of replicable analysis software, a small example can
+ be instructive.
  This paper was automatically generated from raw data and source code available
- at https://github.com/4kbt/replicableAnalysis.git
+ at https://github.com/4kbt/ReplicableAnalysis.git.
+ In this work, we seek to determine the average mass, relative to a XXXRC
+ calibration standard, of Duracell ProCell AAA batteries using XXXRC batteries
+ from a single lot acquired in September of 2014.
+ 
+\end_layout
+
+\begin_layout Standard
+Apparatus: An American Weigh Scales 
+\begin_inset Quotes eld
+\end_inset
+
+Blade
+\begin_inset Quotes erd
+\end_inset
+
+ (AMW-BLADE400, 400
+\begin_inset space ~
+\end_inset
+
+g
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\times0.1$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+g capacity/resolution) scale r
 \end_layout
 
 \end_body
