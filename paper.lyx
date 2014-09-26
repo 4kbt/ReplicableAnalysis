@@ -60,23 +60,72 @@
 \begin_body
 
 \begin_layout Title
-Replicable Analysis: determination of the mass of the Duracell ProCell AAA
- battery
+Replicable Analysis: determination of the density of water
 \end_layout
 
 \begin_layout Author
 Charles Hagedorn
 \end_layout
 
-\begin_layout Standard
+\begin_layout Address
 As a demonstration of replicable analysis software, a small example can
  be instructive.
  This paper was automatically generated from raw data and source code available
- at https://github.com/4kbt/ReplicableAnalysis.git.
- In this work, we seek to determine the average mass, relative to a XXXRC
- calibration standard, of Duracell ProCell AAA batteries using XXXRC batteries
- from a single lot acquired in September of 2014.
+ at https://github.com/4kbt/ReplicableAnalysis.git .
+ In this work, we seek to determine the density of water, relative to a
+ calibration mass and an ensemble of gauge blocks.
+ The experiment will be unblinded in public at the NIST Big G meeting in
+ October 2014.
+ While care will be taken to ensure that the result is accurate, the importance
+ of this measurement is that it can be readily be audited by anyone.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Section
+Experimental Method
+\end_layout
+
+\begin_layout Standard
+An absolute measurement of the density of a material requires, at a minimum,
+ two things, a measurement of mass and a measurement of volume.
+ In this work, we measure the density of water by measuring the mass of
+ water displaced by an object of a known volume.
+ This method allows the straightforward measurement of the exterior of a
+ convex object (in this case, a right cylinder) rather than the greater
+ challenge of characterizing the interior of a concave water-holding vessel.
  
+\end_layout
+
+\begin_layout Standard
+It is necessary that the displacing object be more dense than water so that
+ its displacement may be trivially-known.
+ It is advantageous if the density of the displacing object is comparable
+ to the liquid density to be measured, in order to minimize the influence
+ of the scale's nonlinearity.
+ 
+\end_layout
+
+\begin_layout Section
+Error Budget
+\end_layout
+
+\begin_layout Section
+Software tools
+\end_layout
+
+\begin_layout Section
+Instrument properties
+\end_layout
+
+\begin_layout Section
+Measurement
+\end_layout
+
+\begin_layout Section
+Conclusion
 \end_layout
 
 \begin_layout Standard
@@ -104,7 +153,7 @@ g
 \begin_inset space ~
 \end_inset
 
-g capacity/resolution) scale r
+g capacity/resolution) scale 
 \end_layout
 
 \end_body
