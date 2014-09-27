@@ -1,0 +1,15 @@
+9/27/2014
+
+Just finished weighing. Water level in cup was repeatable to better than 0.030". Cup diameter at height of dot was 3.007\pm0.030".
+
+Water did feel as if it warmed. Upon returning with a thermometer after ~5 minutes post measurement, water didn't feel as warm. Perhaps my hands were cold from handling masses and water? Warmer bottle-water than cup-water hints that some warming may have taken place.
+
+Measurements without zero measurements between mass exchanges were inadvertent. No reason to suspect any changes, as the zeroing is real consistent. 
+
+Water slowly accumulated in the tray without affecting the zero; perhaps the scale has a zero-drift compensation scheme? Once dried out (I'd spilled a little, too much to ignore), the zero had shifted by 0.2 g. Differential measurements may be unaffected at the 0.1 g level?
+
+Will return the linearity screws to the shop.
+
+The first linearity test ("linearityTest.dat") had one different-sized screw, and didn't reach up to the ~240g range of interest. 
+
+All screws used in the linearityTest2 linearity sweep were individually massed as 6.4g on the scale. Two screws out of the ensemble preferred 6.3g and were excluded from the set used to check the linearity of the scale.
