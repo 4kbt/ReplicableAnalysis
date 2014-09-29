@@ -1,2 +1,4 @@
 *.swp
 *.lyx~
+gitlog.log
+*.test
