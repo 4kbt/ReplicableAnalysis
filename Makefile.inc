@@ -3,6 +3,7 @@ HOMEDIR := /home/charlie/waterDensity/ReplicableAnalysis/
 OCT:= octave --no-init-file \
 	--eval "global HOMEDIR = \"$(HOMEDIR)\";"\
 	--eval 'initializeOctave;'\
+	-p $(HOMEDIR)/globalConfig/ \
 	-q 
 
 GNU    := gnuplot -e 'set term dumb' -e 'HOMEDIR = "$(HOMEDIR)"' -d
