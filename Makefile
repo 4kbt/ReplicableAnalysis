@@ -5,7 +5,7 @@ CURRENTDIR := $(shell pwd)
 waterDensity.pdf : gitlog.log
 	$(shell sed -i  "s|HOMEDIR := .*|HOMEDIR := $(CURRENTDIR)/|" Makefile.inc)
 	$(MAKE) $(PARALLEL) -C mlib
-	$(MAKE) -C thesis 
+	$(MAKE) -C paper.lyx 
 
 gitlog.log: 
 	git log > gitlog.log
