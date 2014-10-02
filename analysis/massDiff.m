@@ -1,5 +1,8 @@
 d = load([HOMEDIR '/parsedData/waterWeighing.dat']);
 
+experimentalConstants
+FixedParameters
+
 %to SI units, of course!
 d = d/1000;
 
@@ -11,7 +14,7 @@ calibrationMass = 0.2;
 calibrationMassVar = 0.0005; 
 
 
-w = weighMe(d, calibrationMass, calibrationMassVar);
+w = weigh(d, calibrationMass, calibrationMassVar);
 
 %cull non-measurements
 w = w( max(abs(w')) < 1e80 ,:);
@@ -21,10 +24,6 @@ weightCut = 0.24;
 withPlastic = w( w(:,5) > weightCut,:);
 withWater   = w( w(:,5) < weightCut,:);
 
-mP = mean(withPlastic(:,5));
-mW = mean(withWater(:,5));
-sP = std( withPlastic(:,5));
-sW = std( withWater(:,5));
-
-
+[meanWater stdWater] = bootstrapMean(withWater(:,DiffWeightColumn), nBootstrap);
+[meanWetPlastic stdWetPlastic] = bootstrapMean(withPlastic(:,DiffWeightColumn), nBootstrap);
 
