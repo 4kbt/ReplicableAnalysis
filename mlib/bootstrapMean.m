@@ -1,4 +1,4 @@
-function [m s] = bootstrapMean(data, n)
+function [m s ms] = bootstrapMean(data, n)
 
 	ms = [];
 

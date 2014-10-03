@@ -1,8 +1,27 @@
+%UNBLIND HERE
+cylDiameter = 1.25*0.0254;
+cylDiameterMeasurementErr = 0.002*0.0254; %expected
+
+cylDiameterFabricationErr = 1e-3*0.0254; %determined by dial indicator
+
+%UNBLIND HERE
+cylLength = 2.6 * 0.0254; 
+cylLengthMeasurementErr = 0.002*0.0254; %expected 
+
+cylLengthFabricationErr = sqrt(2)*1.5e-3*0.0254; %determined by dial indicator
+
+
 scaleToSI = 0.001;
 
 calibrationMass = 0.2;
 %expected variation for parsing the measurements, not the standard's accuracy
 calibrationMassVar = 0.0005; 
 
-cylDiameter = 1.25*0.0254;
-cylLength = 2.6 * 0.0254; 
+%a mass between the wet plastic and water measurements to separate them.
+weightCut = 0.24;
+
+nBootstrap = 10000;
+
+
+%code stuff
+DiffWeightColumn = 5;
