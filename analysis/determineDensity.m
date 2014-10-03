@@ -22,10 +22,10 @@ cylLengthErr = sqrt(cylLengthMeasurementErr^2 + ...
 cylVolumeErr = sqrt(  (pi * cylLength * cylDiameter * cylDiameterErr)^2 + ...
 		      (pi * (cylDiameter/2)^2 * cylLengthErr)^2 );
 
-printSIErr( cylVolume, cylVolumeErr, 2, 0, 'm^{3}', [HOMEDIR '/extracted/cylVolume.tex']);
+printSIErr( cylVolume, cylVolumeErr, 2, 0, 'm$^{3}$', [HOMEDIR '/extracted/cylVolume.tex']);
 
 
 waterDensityErr = sqrt( ( waterMass/cylVolume^2 * cylVolumeErr )^2 + ...
 			( waterMassErr/cylVolume) ^2 );
 
-printSIErr( waterDensity, waterDensityErr, 2, 3, 'g/m^{3}', [HOMEDIR '/extracted/waterDensity.tex']);
+printSIErr( waterDensity, waterDensityErr, 2, 3, 'g/m$^{3}$', [HOMEDIR '/extracted/waterDensity.tex']);

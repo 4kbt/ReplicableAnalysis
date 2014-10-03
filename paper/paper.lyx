@@ -78,6 +78,14 @@ As a demonstration of replicable analysis software, a small example can
  October 2014.
  While care will be taken to ensure that the result is accurate, the importance
  of this measurement is that it can be readily be audited by anyone.
+ We find the density of water to be 
+\begin_inset CommandInset include
+LatexCommand input
+filename "/home/charlie/waterDensity/ReplicableAnalysis/extracted/waterDensity.tex"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -86,6 +94,49 @@ Introduction
 
 \begin_layout Section
 Experimental Method
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Pictures/small/IMG_8915.JPG
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Major components of experimental hardware: AWS-400 scale, 200
+\begin_inset space ~
+\end_inset
+
+g calibration mass, plastic displacement reference, water bottle, weighing
+ cup, screws for linearity test, thermometer for water temperature.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -103,9 +154,121 @@ An absolute measurement of the density of a material requires, at a minimum,
 It is necessary that the displacing object be more dense than water so that
  its displacement may be trivially-known.
  It is advantageous if the density of the displacing object is comparable
- to the liquid density to be measured, in order to minimize the influence
+ to the liquid density to be measured, in order to minimize any influence
  of the scale's nonlinearity.
+ For this reason, we selected a plastic from a blank found in our laboratory's
+ machine shop.
+ For this measurement, the mass need not be internally-uniform, as only
+ its volume is of direct importance to the measurement.
+ Indeed, prior to the unveiling of the the blind, we have no idea what the
+ composition of the plastic is.
+ The plastic was observed to be denser than water, our only major requirement.
+\end_layout
+
+\begin_layout Standard
+The plastic blank was machined by weighing and cutting, without reference
+ to any calibrated length standard, to a goal of 100
+\begin_inset space ~
+\end_inset
+
+g.
+ The uniformity of the machining was checked using dial indicators without
+ an absolute reference, as seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Verifying-machining-uniformity"
+
+\end_inset
+
+.
+ The diameter was observed to have 
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/cylDiameterFabricationErr.tex"
+
+\end_inset
+
+ peak-to-peak variation, and the length was observed to have 
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/cylLengthFabricationErr.tex"
+
+\end_inset
+
+ peak-to-peak variation.
  
+\end_layout
+
+\begin_layout Standard
+The cylinder was measured to have a diameter of 
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/cylDiameter.tex"
+
+\end_inset
+
+, and a length of 
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/cylLength.tex"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Pictures/small/IMG_9417.JPG
+	width 30page%
+	rotateAngle 270
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../Pictures/small/IMG_9415.JPG
+	width 30page%
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Verifying-machining-uniformity"
+
+\end_inset
+
+Verifying machining uniformity without absolute reference
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -122,6 +285,18 @@ Instrument properties
 
 \begin_layout Section
 Measurement
+\end_layout
+
+\begin_layout Standard
+The final measured density of Seattle water at room temperature: 
+\begin_inset CommandInset include
+LatexCommand input
+filename "/home/charlie/waterDensity/ReplicableAnalysis/extracted/waterDensity.tex"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Section
