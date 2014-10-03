@@ -3,3 +3,5 @@
 gitlog.log
 *.test
 *.pdf
+\#*\#
+*.emergency
