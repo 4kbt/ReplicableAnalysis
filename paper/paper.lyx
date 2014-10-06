@@ -81,7 +81,7 @@ As a demonstration of replicable analysis software, a small example can
  We find the density of water to be 
 \begin_inset CommandInset include
 LatexCommand input
-filename "/home/charlie/waterDensity/ReplicableAnalysis/extracted/waterDensity.tex"
+filename "../extracted/waterDensity.tex"
 
 \end_inset
 
@@ -291,7 +291,7 @@ Measurement
 The final measured density of Seattle water at room temperature: 
 \begin_inset CommandInset include
 LatexCommand input
-filename "/home/charlie/waterDensity/ReplicableAnalysis/extracted/waterDensity.tex"
+filename "../extracted/waterDensity.tex"
 
 \end_inset
 
