@@ -3,13 +3,16 @@ include Makefile.inc
 CURRENTDIR := $(shell pwd)
 
 
-waterDensity.pdf : gitlog.log test
-	$(shell sed -i  "s|HOMEDIR := .*|HOMEDIR := $(CURRENTDIR)/|" Makefile.inc)
+waterDensity.pdf : gitlog.log test path
 	$(MAKE) -C analysis
 	$(MAKE) $(PARALLEL) -C Pictures
 	$(MAKE) -C paper
 
-test: 
+path :
+	$(shell sed -i  "s|HOMEDIR := .*|HOMEDIR := $(CURRENTDIR)/|" Makefile.inc)
+
+
+test: path
 	$(MAKE) $(PARALLEL) -C mlib
 
 
