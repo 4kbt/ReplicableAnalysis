@@ -6,6 +6,11 @@ EXTRACTEDDEPS := $(shell grep filename paper.lyx | awk '{print $$2}' | sed 's/\"
 KNOWNEXTRACTED := $(shell find ../ -type d | grep extracted)
 KNOWNEXTRACTED := $(addsuffix /*.tex, $(KNOWNEXTRACTED))
 
+all: presentation.pdf paper.pdf
+
+presentation.pdf : paper.pdf presentation.lyx
+	$(LYX) presentation.lyx
+
 paper.pdf : paper.lyx $(EXTRACTEDDEPS) paper.bib gitOut.txt
 	$(OCT) ../globalConfig/experimentalConstants.m
 	$(HOMEDIR)/bin/mathify.sh $(HOMEDIR)/extracted/*.tex

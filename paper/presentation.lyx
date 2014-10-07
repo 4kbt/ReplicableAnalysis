@@ -79,7 +79,7 @@ Senior grad student finishing up a short-range inverse square law test
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename PlateWashBigGSmall.jpg
+	filename ../Pictures/PlateWashBigGSmall.jpg
 	width 100page%
 
 \end_inset
@@ -91,8 +91,8 @@ Senior grad student finishing up a short-range inverse square law test
 
 \end_layout
 
-\begin_layout Standard
-Two topics: 
+\begin_layout BeginFrame
+Two topics
 \end_layout
 
 \begin_layout Itemize
@@ -130,6 +130,10 @@ Opinion: Correct execution of a measurement does not depend upon its final
 \end_layout
 
 \end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
 \begin_layout BeginFrame
 Replicable Analysis
 \end_layout
@@ -196,38 +200,10 @@ Replicable Analysis
 
 \begin_layout Itemize
 From data to publication with a single command.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout BeginFrame
-How does it work?
 \end_layout
 
 \begin_layout Itemize
-Empty directory
-\end_layout
-
-\begin_layout Itemize
-Start demo
-\end_layout
-
-\begin_layout Itemize
-Github
+I need to start an example program while I tell you about a small experiment.
 \end_layout
 
 \begin_layout EndFrame
@@ -235,40 +211,6 @@ Github
 \end_layout
 
 \begin_layout BeginFrame
-Software tools
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-All tools are freely available, with auditable source code
-\end_layout
-
-\begin_layout Itemize
-Git - a source-code management system
-\end_layout
-
-\begin_layout Itemize
-GNU Make - manages the recipe
-\end_layout
-
-\begin_layout Itemize
-GNU Octave - does most of the computation
-\end_layout
-
-\begin_layout Itemize
-Gnuplot - nicer plots
-\end_layout
-
-\begin_layout Itemize
-LyX/LaTeX - typesetting
-\end_layout
-
-\begin_layout Itemize
-Assorted GNU/Linux standard tools (shell scripts, sed, etc.) 
-\end_layout
-
-\begin_layout EndFrame
 
 \end_layout
 
@@ -280,9 +222,10 @@ A small experiment
 Measure the density of Seattle City water.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\align center
 \begin_inset Graphics
-	filename /home/charlie/NISTBlind/ReplicableAnalysis/Pictures/small/IMG_8914.JPG
+	filename ../Pictures/small/IMG_8914.JPG
 	width 70text%
 
 \end_inset
@@ -376,6 +319,10 @@ Using measured volume
 Error Budget
 \end_layout
 
+\begin_layout Standard
+askljdf
+\end_layout
+
 \begin_layout EndFrame
 
 \end_layout
@@ -385,12 +332,36 @@ Result....
  before unblinding
 \end_layout
 
+\begin_layout Standard
+As measured by this analysis, the density of the Seattle City Water sample
+ was 
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/waterDensity.tex"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout EndFrame
 
 \end_layout
 
 \begin_layout BeginFrame
-Let's Unblind!
+How does the software work?
+\end_layout
+
+\begin_layout Itemize
+Empty directory
+\end_layout
+
+\begin_layout Itemize
+Start demo
+\end_layout
+
+\begin_layout Itemize
+Github
 \end_layout
 
 \begin_layout EndFrame
@@ -398,13 +369,123 @@ Let's Unblind!
 \end_layout
 
 \begin_layout BeginFrame
-Replicable Analysis and Blind Review
+Software tools
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+All tools are freely available, with auditable source code
+\end_layout
+
+\begin_layout Itemize
+Git - a source-code management system
+\end_layout
+
+\begin_layout Itemize
+GNU Make - manages the recipe
+\end_layout
+
+\begin_layout Itemize
+GNU Octave - does most of the computation
+\end_layout
+
+\begin_layout Itemize
+Gnuplot - nicer plots
+\end_layout
+
+\begin_layout Itemize
+LyX/LaTeX - typesetting
+\end_layout
+
+\begin_layout Itemize
+Assorted GNU/Linux standard tools (shell scripts, sed, etc.) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+How to include a number? TeX child documents.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/waterDensity.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "../extracted/waterDensity.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Unblinded!
 \end_layout
 
 \begin_layout Standard
-Two topics: 
+lkasjdf
 \end_layout
 
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Replicable Analysis
+\end_layout
+
+\begin_layout Itemize
+Pros:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Repeatable, clear analysis that's easy to audit.
+\end_layout
+
+\begin_layout Itemize
+You catch your own errors.
+\end_layout
+
+\begin_layout Itemize
+Encourages clarity
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Cons:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It is work.
+\end_layout
+
+\begin_layout Itemize
+New tools and ideas take time to learn.
+\end_layout
+
+\begin_layout Itemize
+Can get trapped in a framework as analysis evolves.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Replicable Analysis
 \end_layout
@@ -420,32 +501,26 @@ That process can be shared along with the publication.
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
-Blind Review
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-It is possible for a measurement to remain blind until all concerned parties
- are convinced of correct execution.
-\end_layout
-
-\begin_layout Itemize
-Irreversible unblinding can be distributed.
-\end_layout
-
-\begin_layout Itemize
-Opinion: Correct execution of a measurement does not depend upon its final
- central value.
-\end_layout
-
-\end_deeper
 \begin_layout EndFrame
 
 \end_layout
 
 \begin_layout BeginFrame
 Blind Review
+\end_layout
+
+\begin_layout Itemize
+It is possible for a measurement to remain blind until all concerned parties
+ are convinced of correct execution.
+\end_layout
+
+\begin_layout Itemize
+Irreversible unblinding can be distributed; it doesn't require a conference.
+\end_layout
+
+\begin_layout Itemize
+Opinion: Correct execution of a measurement does not depend upon its final
+ central value.
 \end_layout
 
 \begin_layout Itemize
@@ -467,6 +542,10 @@ Blind Review
 \end_layout
 
 \begin_layout Standard
+slakdfj
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
@@ -478,12 +557,20 @@ Blind Review
 Blind Review
 \end_layout
 
+\begin_layout Standard
+laskdjf
+\end_layout
+
 \begin_layout EndFrame
 
 \end_layout
 
 \begin_layout BeginFrame
 Blind Review
+\end_layout
+
+\begin_layout Standard
+als;kjdf
 \end_layout
 
 \begin_layout EndFrame
