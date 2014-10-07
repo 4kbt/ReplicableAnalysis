@@ -275,6 +275,46 @@ Verifying machining uniformity without absolute reference
 Error Budget
 \end_layout
 
+\begin_layout Standard
+Sources of uncertainty:
+\end_layout
+
+\begin_layout Standard
+Thermal expansion of block from lab to NIST
+\end_layout
+
+\begin_layout Standard
+Thermal expansion of water
+\end_layout
+
+\begin_layout Standard
+Water impurities - take as a correction, or simply state/include as uncertainty?
+\end_layout
+
+\begin_layout Standard
+Hysteresis
+\end_layout
+
+\begin_layout Standard
+Finite scale resolution
+\end_layout
+
+\begin_layout Standard
+Auto-zeroing (call it 0.1 g?)
+\end_layout
+
+\begin_layout Standard
+Bouyancy correction for calibration mass
+\end_layout
+
+\begin_layout Standard
+Buoyancy correction for density puck
+\end_layout
+
+\begin_layout Standard
+Nonlinearity
+\end_layout
+
 \begin_layout Section
 Software tools
 \end_layout
