@@ -14,5 +14,9 @@ end
 %! fn = 'testOutput/printStringTest1.txt';
 %! s = 'This is only a test';
 %! printString(s,fn);
-%! t = fileread(fn);
+%! fid  = fopen( fn, "r", "native");
+%! t = fgetl(fid);
+%! fclose(fid);
+%! s
+%! t
 %! assert(s == t);
