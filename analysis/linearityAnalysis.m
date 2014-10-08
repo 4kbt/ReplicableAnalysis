@@ -9,4 +9,6 @@ residuals = d(:,2) - fitVals;
 linFit = [ d fitVals residuals ];
 
 fitSlope = p(1);
-fitOffset = p(2); 
+fitOffset = p(2);
+
+save 'linearityAnalysis.dat' linFit 

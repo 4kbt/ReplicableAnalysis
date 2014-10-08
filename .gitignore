@@ -1,3 +1,5 @@
+*.eps
+*.dat
 *.swp
 *.lyx~
 gitlog.log
