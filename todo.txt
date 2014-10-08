@@ -1,0 +1,15 @@
+
+Blind review graphic
+Error budget
+Linearity Plot
+Figure out blank slide
+Buoyancy corrections
+Clean/organize code
+Flesh out paper
+
+Measurements over time
+bootstrap histograms
+Experimental data slide
+
+
+What are the problems blind review can solve?
