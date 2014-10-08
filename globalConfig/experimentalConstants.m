@@ -20,19 +20,39 @@ printSI(cylLengthFabricationErr, 1, -3, 'm', [HOMEDIR '/extracted/cylLengthFabri
 printSIErr( cylLength, cylLengthErr, 2, -3, 'm', [HOMEDIR '/extracted/cylLength.tex'] );
 
 
-scaleToSI = 0.001;
+%Calibration Mass properties
 
 calibrationMass = 0.2;
 %expected variation for parsing the measurements, not the standard's accuracy
 calibrationMassVar = 0.0005; 
 
+%dimensions
+calMassDiameter = 1.5e-2; calMassDiameterErr = 1e-2;
+calMassLength =	2.5e-2;   calMassLengthErr   = 1e-2;
 
-calibrationMassDiameter = 1.5e-2;
-calibrationMassLength =	2.5e-2;
+%Conversion from balance readout (g) to SI (kg).
+scaleToSI = 0.001;
+
+%Volumes
+[calMassVolume calMassVolumeErr] = cylindricalVolume( calMassDiameter,
+						      calMassDiameterErr,
+						      calMassLength,
+						      calMassLengthErr);
+
+[cylVolume cylVolumeErr] = cylindricalVolume( cylDiameter,
+			   		      cylDiameterErr,
+					      cylLength,
+					      cylLengthErr);
+
+%hack to make output correct
+mm3Factor = 1e6;
+printSIErr( cylVolume*mm3Factor, cylVolumeErr * mm3Factor,
+		 2, -3, 'm$^{3}$', [HOMEDIR '/extracted/cylVolume.tex'] );
+printSIErr( calMassVolume*mm3Factor, calMassVolumeErr * mm3Factor,
+		 2, -3, 'm$^{3}$', [HOMEDIR '/extracted/calMassVolume.tex'] );
 
 
-
-%%%% code parameters
+%%%% analysis parameters
 
 %a mass between the wet plastic and water measurements to separate them.
 weightCut = 0.24;
