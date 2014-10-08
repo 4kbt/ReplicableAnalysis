@@ -54,6 +54,10 @@ printSIErr( calMassVolume*mm3Factor, calMassVolumeErr * mm3Factor,
 
 %%%% analysis parameters
 
+%Conservative upper bound
+hysteresisErr = 0.0001; 
+printSI(hysteresisErr, 1, 0, 'g', [HOMEDIR '/extracted/hysteresisErr.tex']); 
+
 %a mass between the wet plastic and water measurements to separate them.
 weightCut = 0.24;
 

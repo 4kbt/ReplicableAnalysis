@@ -2,7 +2,7 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass article
+\textclass revtex4
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -25,6 +25,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -92,6 +93,21 @@ filename "../extracted/waterDensity.tex"
 Introduction
 \end_layout
 
+\begin_layout Standard
+This paper is designed as an introduction to the idea of replicable analysis.
+ This paper is entirely computer-generated from data and source code available
+ at https://github.com/4kbt/ReplicableAnalysis.git .
+ As a small example, we attempt a measurement of the density of Seattle
+ City water sourced from a tap in our laboratory shop.
+ 
+\end_layout
+
+\begin_layout Standard
+This measurement was performed blind, and was unblinded in public by the
+ measurement of two key experimental dimensions at the NIST Big G meeting
+ in October of 2014.
+\end_layout
+
 \begin_layout Section
 Experimental Method
 \end_layout
@@ -127,10 +143,6 @@ g calibration mass, plastic displacement reference, water bottle, weighing
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -262,7 +274,100 @@ Verifying machining uniformity without absolute reference
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Software tools
+\end_layout
+
+\begin_layout Standard
+The software tools used to generate this document and the associated presentatio
+n are all open-source and freely-available.
+ The source code is managed under Git, an industry-standard program.
+ The build recipe was controlled using GNU Make; there may be better alternative
+s, but Make is a stalwart.
+ The majority of the computation was done using Octave, a GNU implementation
+ of the MATLAB language.
+ Plots were generated using Gnuplot.
+ For batch image processing, ImageMagick was used.
+ The usual supporting software of any GNU/Linux operating system (sed, bash,
+ etc) was also used.
+ 
+\end_layout
+
+\begin_layout Standard
+The software libraries utilize internal tests to help ensure expected behavior
+ on multiple architectures.
+ While the unit-test coverage is not complete, the reader is referred to
+ the source code to see which checks are applied, and how.
+\end_layout
+
+\begin_layout Section
+Instrument properties
+\end_layout
+
+\begin_layout Subsection
+Linearity
+\end_layout
+
+\begin_layout Standard
+The linearity of the scale was assessed using an ensemble of ostensibly-identica
+l screws from our shop.
+ All of them were weighed on the balance individually, and all of those
+ used read 6.4
+\begin_inset space ~
+\end_inset
+
+g.
+ The scale was tared and calibrated, and then the scale readings recorded
+ as screws were added to and then removed from the pan, spanning the scale's
+ entire rated dynamic range.
+ The results are plotted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Linearity-test,-done"
+
+\end_inset
+
+.
+ The instrument's performance is impressive for a $25 scale.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../analysis/linearityAnalysis.eps
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Linearity-test,-done"
+
+\end_inset
+
+Linearity test, done by adding and removing equal-mass screws to the scale
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -271,7 +376,38 @@ Verifying machining uniformity without absolute reference
 
 \end_layout
 
+\begin_layout Subsection
+Hysteresis
+\end_layout
+
+\begin_layout Standard
+The linearity data-taking sequence can also be used to extract information
+ regarding the hysteresis of the scale.
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Linearity-test,-done"
+
+\end_inset
+
+, we plot the residuals with different colors as weights are being added
+ to the scale and as weights are removed from the scale.
+ By eye, it is clear that there was either a small instrumental drift or
+ that the scale exhibits hysteresis at the 
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/hysteresisErr.tex"
+
+\end_inset
+
+ level or less for full-scale motion.
+\end_layout
+
 \begin_layout Section
+Measurement
+\end_layout
+
+\begin_layout Subsection
 Error Budget
 \end_layout
 
@@ -315,16 +451,8 @@ Buoyancy correction for density puck
 Nonlinearity
 \end_layout
 
-\begin_layout Section
-Software tools
-\end_layout
-
-\begin_layout Section
-Instrument properties
-\end_layout
-
-\begin_layout Section
-Measurement
+\begin_layout Standard
+Dissolved Solids
 \end_layout
 
 \begin_layout Standard
