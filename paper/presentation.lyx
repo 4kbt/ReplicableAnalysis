@@ -467,6 +467,11 @@ You catch your own errors.
 Encourages clarity
 \end_layout
 
+\begin_layout Itemize
+It's liberating.
+ Your responsibility is quality, above all else.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Cons:
@@ -483,6 +488,10 @@ New tools and ideas take time to learn.
 
 \begin_layout Itemize
 Can get trapped in a framework as analysis evolves.
+\end_layout
+
+\begin_layout Itemize
+It's intimidating, as everyone will see your work.
 \end_layout
 
 \end_deeper
@@ -538,15 +547,101 @@ Medical studies are
 \end_layout
 
 \begin_layout BeginFrame
+Important objections to blind analyses
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+No experiment is ever truly blind.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If there's a gross error after the opening of a blind, you'll revisit the
+ measurement before publication.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Just because a measurement is blind doesn't mean that it's correct.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Invoking blindness is insufficient to guarantee anything.
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Risks and Consequences in precision measurement
+\end_layout
+
+\begin_layout Itemize
+Measurements that agree with the status quo are safe.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Higher precision 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ impress peers, get/keep a great job
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Measurements that disagree with the status quo are scary.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Small chance of major revolution and big payoff
+\end_layout
+
+\begin_layout Itemize
+Long term consequences of failure
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../Pictures/GoogleTrends.jpg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
 Blind Review
 \end_layout
 
-\begin_layout Standard
-slakdfj
-\end_layout
-
-\begin_layout Standard
-
+\begin_layout Itemize
+Procedure
 \end_layout
 
 \begin_layout EndFrame
@@ -557,8 +652,12 @@ slakdfj
 Blind Review
 \end_layout
 
-\begin_layout Standard
-laskdjf
+\begin_layout Itemize
+Pros
+\end_layout
+
+\begin_layout Itemize
+Cons
 \end_layout
 
 \begin_layout EndFrame
@@ -566,13 +665,44 @@ laskdjf
 \end_layout
 
 \begin_layout BeginFrame
+Two topics
+\end_layout
+
+\begin_layout Itemize
+Replicable Analysis
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It's possible to go from raw data to final publication with a single computer
+ command.
+\end_layout
+
+\begin_layout Itemize
+That process can be shared along with the publication.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 Blind Review
 \end_layout
 
-\begin_layout Standard
-als;kjdf
+\begin_deeper
+\begin_layout Itemize
+It is possible for a measurement to remain blind until all concerned parties
+ are convinced of correct execution.
 \end_layout
 
+\begin_layout Itemize
+Irreversible unblinding can be distributed.
+\end_layout
+
+\begin_layout Itemize
+Opinion: Correct execution of a measurement does not depend upon its final
+ central value.
+\end_layout
+
+\end_deeper
 \begin_layout EndFrame
 
 \end_layout
