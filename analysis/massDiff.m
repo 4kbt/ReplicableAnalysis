@@ -3,7 +3,7 @@ experimentalConstants
 d = load([HOMEDIR '/parsedData/waterWeighing.dat']);
 
 %to SI units, of course!
-d = d/1000;
+d = d * scaleToSI;
 
 w = weigh(d, calibrationMass, calibrationMassVar);
 
