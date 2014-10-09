@@ -1,15 +1,16 @@
 
 Blind review graphic
 Error budget
-Linearity Plot
 Figure out blank slide
 Buoyancy corrections
 Clean/organize code
 Flesh out paper
 
+Add to paper:
 Measurements over time
 bootstrap histograms
 Experimental data slide
+Linearity Plot
 
 
 What are the problems blind review can solve?
