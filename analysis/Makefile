@@ -2,8 +2,9 @@ include ../Makefile.inc
 
 LIN=linearityAnalysis
 HIST=histograms
+RAW=rawData
 
-all: $(LIN).eps density $(HIST).eps
+all: $(LIN).eps density $(HIST).eps $(RAW).eps
 
 density: *.m
 	$(OCT) determineDensity.m
@@ -16,6 +17,9 @@ $(LIN).eps :  $(LIN).gpl $(LIN).dat
 	$(GNU) $<
 
 $(HIST).eps : $(HIST).gpl density
+	$(GNU) $<
+
+$(RAW).eps : $(RAW).gpl
 	$(GNU) $<
 
 clean:

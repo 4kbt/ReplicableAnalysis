@@ -1,0 +1,11 @@
+set term postscript enhanced solid color eps
+set output 'rawData.eps'
+
+set key noauto
+
+set xlabel 'weighing #'
+set ylabel 'scale reading (g)'
+
+pl [][-10:] \
+	HOMEDIR.'/rawData/linearityTest2.dat' u ($0< 17 ? $0 : 1/0):2 w p pt 7 lt 3,\
+	HOMEDIR.'/rawData/linearityTest2.dat' u ($0> 16 ? $0 : 1/0):1 w p pt 7 lt 3
