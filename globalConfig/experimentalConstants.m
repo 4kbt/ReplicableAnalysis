@@ -27,8 +27,9 @@ calibrationMass = 0.2;
 calibrationMassVar = 0.0005; 
 
 %dimensions
-calMassDiameter = 1.5e-2; calMassDiameterErr = 1e-2;
-calMassLength =	2.5e-2;   calMassLengthErr   = 1e-2;
+calMassDiameter = 1.135*0.0254; calMassDiameterErr = calMassDiameter*0.2;
+calMassLength =	1.782*0.0254;   calMassLengthErr   = 0.003*0.0254;
+%diameter uncertainty is expanded because of molded handle.
 
 %Conversion from balance readout (g) to SI (kg).
 scaleToSI = 0.001;
