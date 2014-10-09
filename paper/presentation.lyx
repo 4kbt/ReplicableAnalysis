@@ -222,7 +222,7 @@ Measure the density of Seattle City water.
 \align center
 \begin_inset Graphics
 	filename ../Pictures/small/IMG_8914.JPG
-	width 70text%
+	width 100text%
 
 \end_inset
 
@@ -301,6 +301,63 @@ Using measured volume
 \[
 \rho=\frac{(W_{0}+W)-\left((W_{0}+M)-M\right)}{V}=\frac{W}{V}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Raw Data
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../analysis/rawData.eps
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Linearity
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../analysis/linearityAnalysis.eps
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Bootstrapping and Linearity
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../analysis/histograms.eps
+	width 100text%
 
 \end_inset
 
