@@ -20,3 +20,9 @@ printSIErr( meanPlastic, stdPlastic, 2, 0, 'g', [HOMEDIR '/extracted/waterDiff.t
 if(stdPlastic < 1e-6)
 	stdPlastic = 0.0001; %minimum resolution of the scale
 end
+
+[plasticN, plasticX] = hist( plasticMeanDistribution, sqrt(nBootstrap));
+
+plasticHistOut = [plasticX' plasticN'];
+save 'extracted/plasticHistOut.dat' plasticHistOut
+

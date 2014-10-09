@@ -1,0 +1,21 @@
+set term postscript enhanced solid color eps
+set output 'histograms.eps'
+
+set xlabel 'extracted mass (g)'
+set ylabel 'bootstrapped histogram'
+
+set multiplot layout 3,1
+set title 'Water Only'
+pl \
+	'extracted/waterHistOut.dat' u (1000*$1):2 w boxes  tit 'water only'
+
+
+set title 'Plastic Mass in Water'
+pl \
+	'extracted/wetPlasticHistOut.dat' u (1000*$1):2 w boxes lt 3 tit 'with plastic'
+
+set title 'Bare Plastic Mass'
+pl \
+	'extracted/plasticHistOut.dat' u (1000*$1):2 w boxes lt 2 tit 'plastic alone'
+unset multiplot
+

@@ -19,10 +19,16 @@ withWater   = w( w(:,DiffWeightColumn) < weightCut,:);
 
 printSIErr( meanWater, stdWater, 2, 0, 'g', [HOMEDIR '/extracted/waterDiff.tex']);
 
-[waterN, waterX] = hist( waterDistribution, nBootstrap);
+[waterN, waterX] = hist( waterDistribution, sqrt(nBootstrap));
+waterHistOut = [waterX' waterN'];
+save 'extracted/waterHistOut.dat' waterHistOut
+
 
 [meanWetPlastic stdWetPlastic wetPlasticDistribution] = bootstrapMean(withPlastic(:,DiffWeightColumn), nBootstrap);
 
 printSIErr( meanWetPlastic, stdWetPlastic, 2, 0, 'g', [HOMEDIR '/extracted/wetPlasticDiff.tex']);
 
-[wetPlasticN, wetPlasticX] = hist( wetPlasticDistribution, nBootstrap);
+[wetPlasticN, wetPlasticX] = hist( wetPlasticDistribution, sqrt(nBootstrap));
+
+wetPlasticHistOut = [wetPlasticX' wetPlasticN'];
+save 'extracted/wetPlasticHistOut.dat' wetPlasticHistOut
