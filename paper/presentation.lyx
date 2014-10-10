@@ -368,7 +368,8 @@ Linearity
 \end_layout
 
 \begin_layout BeginFrame
-Bootstrapped uncertainties.... 
+Bootstrapped uncertainties....
+ 
 \end_layout
 
 \begin_layout Standard
@@ -403,7 +404,7 @@ Result....
 \begin_inset Text
 
 \begin_layout Plain Layout
-Type
+Quantity
 \end_layout
 
 \end_inset
@@ -412,85 +413,7 @@ Type
 \begin_inset Text
 
 \begin_layout Plain Layout
-Effect
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Thermal volumetric expansion of puck
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/ThermVolumetricExpansion.tex"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Dissolved solids/impurities
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/dissolvedSolidsMass.tex"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Scale Hysteresis
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/hysteresisErr.tex"
-
-\end_inset
-
-
+Magnitude
 \end_layout
 
 \end_inset
@@ -527,7 +450,7 @@ filename "../extracted/autoZeroing.tex"
 \begin_inset Text
 
 \begin_layout Plain Layout
- Buoyancy shift, calibration mass
+Scale nonlinearity
 \end_layout
 
 \end_inset
@@ -538,7 +461,33 @@ filename "../extracted/autoZeroing.tex"
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
-filename "../extracted/calBuoyShift.tex"
+filename "../extracted/scaleNonlinearity.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hysteresis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/hysteresisErr.tex"
 
 \end_inset
 
@@ -579,7 +528,7 @@ filename "../extracted/plasticBuoyMass.tex"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Scale nonlinearity
+Dissolved solids/impurities
 \end_layout
 
 \end_inset
@@ -590,10 +539,112 @@ Scale nonlinearity
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
-filename "../extracted/scaleNonlinearity.tex"
+filename "../extracted/dissolvedSolidsMass.tex"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Buoyancy shift, calibration mass
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/calBuoyShift.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Plastic Cylinder Mass
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/meanPlastic.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Displaced Water Mass
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/waterMass.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -657,7 +708,7 @@ filename "../extracted/cylLength.tex"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Thermal volumetric expansion
 \end_layout
 
 \end_inset
@@ -666,6 +717,12 @@ filename "../extracted/cylLength.tex"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/ThermVolumetricExpansion.tex"
+
+\end_inset
+
 
 \end_layout
 
@@ -677,6 +734,8 @@ filename "../extracted/cylLength.tex"
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Plastic Cylinder Volume
 \end_layout
 
@@ -689,58 +748,6 @@ Plastic Cylinder Volume
 \begin_inset CommandInset include
 LatexCommand input
 filename "../extracted/cylVolume.tex"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Plastic Cylinder Mass
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/meanPlastic.tex"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Displaced Water Mass
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/waterMass.tex"
 
 \end_inset
 
@@ -918,7 +925,7 @@ Unblinded!
 \begin_inset Text
 
 \begin_layout Plain Layout
-Type
+Quantity
 \end_layout
 
 \end_inset
@@ -927,85 +934,7 @@ Type
 \begin_inset Text
 
 \begin_layout Plain Layout
-Effect
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Thermal volumetric expansion of puck
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/ThermVolumetricExpansion.tex"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Dissolved solids/impurities
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/dissolvedSolidsMass.tex"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Scale Hysteresis
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/hysteresisErr.tex"
-
-\end_inset
-
-
+Magnitude
 \end_layout
 
 \end_inset
@@ -1042,7 +971,7 @@ filename "../extracted/autoZeroing.tex"
 \begin_inset Text
 
 \begin_layout Plain Layout
- Buoyancy shift, calibration mass
+Scale nonlinearity
 \end_layout
 
 \end_inset
@@ -1053,7 +982,33 @@ filename "../extracted/autoZeroing.tex"
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
-filename "../extracted/calBuoyShift.tex"
+filename "../extracted/scaleNonlinearity.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hysteresis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/hysteresisErr.tex"
 
 \end_inset
 
@@ -1094,7 +1049,7 @@ filename "../extracted/plasticBuoyMass.tex"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Scale nonlinearity
+Dissolved solids/impurities
 \end_layout
 
 \end_inset
@@ -1105,10 +1060,112 @@ Scale nonlinearity
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
-filename "../extracted/scaleNonlinearity.tex"
+filename "../extracted/dissolvedSolidsMass.tex"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Buoyancy shift, calibration mass
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/calBuoyShift.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Plastic Cylinder Mass
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/meanPlastic.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Displaced Water Mass
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/waterMass.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1172,7 +1229,7 @@ filename "../extracted/cylLength.tex"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Thermal volumetric expansion
 \end_layout
 
 \end_inset
@@ -1181,6 +1238,12 @@ filename "../extracted/cylLength.tex"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/ThermVolumetricExpansion.tex"
+
+\end_inset
+
 
 \end_layout
 
@@ -1192,6 +1255,8 @@ filename "../extracted/cylLength.tex"
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Plastic Cylinder Volume
 \end_layout
 
@@ -1204,58 +1269,6 @@ Plastic Cylinder Volume
 \begin_inset CommandInset include
 LatexCommand input
 filename "../extracted/cylVolume.tex"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Plastic Cylinder Mass
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/meanPlastic.tex"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Displaced Water Mass
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/waterMass.tex"
 
 \end_inset
 
