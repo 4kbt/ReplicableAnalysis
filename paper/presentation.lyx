@@ -504,7 +504,7 @@ Replicable Analysis
 \end_layout
 
 \begin_layout Itemize
-Pros:
+Strengths:
 \end_layout
 
 \begin_deeper
@@ -527,16 +527,16 @@ It's liberating.
 
 \end_deeper
 \begin_layout Itemize
-Cons:
+Weaknesses:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-It is work.
+It is work, and it takes time.
 \end_layout
 
 \begin_layout Itemize
-New tools and ideas take time to learn.
+Hardware execution cannot be documented with comparable precision.
 \end_layout
 
 \begin_layout Itemize
@@ -620,6 +620,13 @@ If there's a gross error after the opening of a blind, you'll revisit the
  measurement before publication.
 \end_layout
 
+\begin_layout Itemize
+Solution: 
+\series bold
+\color blue
+Unblinding must be irreversibly public.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 \begin_inset Quotes eld
@@ -635,6 +642,46 @@ Just because a measurement is blind doesn't mean that it's correct.
 \begin_deeper
 \begin_layout Itemize
 Invoking blindness is insufficient to guarantee anything.
+\end_layout
+
+\begin_layout Itemize
+Agreed: 
+\series bold
+\color blue
+There is no substitute for quality work.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+If a measurement is blind, it's harder to find problems.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Comparison with known results yields efficiency gains.
+\end_layout
+
+\begin_layout Itemize
+Solution: 
+\series bold
+\color blue
+Yep.
+ Blind measurements force consideration of all possible errors.
+\end_layout
+
+\begin_layout Itemize
+Upside: 
+\series bold
+\color blue
+You stop looking for systematics when you've considered everything you can
+ think of.
 \end_layout
 
 \end_deeper
@@ -676,7 +723,7 @@ Long term consequences of failure
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../Pictures/GoogleTrends.jpg
+	filename plots/GoogleTrendsData.eps
 	width 70text%
 
 \end_inset
@@ -693,26 +740,48 @@ Long term consequences of failure
 Blind Review
 \end_layout
 
-\begin_layout Itemize
-Procedure
-\end_layout
-
-\begin_layout EndFrame
-
-\end_layout
-
-\begin_layout BeginFrame
-Blind Review
+\begin_layout Standard
+Chalkboard time...
+ 
 \end_layout
 
 \begin_layout Itemize
-Pros
+Strengths
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Allows blind peer review to the highest hierarchy of error-checking
 \end_layout
 
 \begin_layout Itemize
-Cons
+Asynchronous irreversible public unblinding
 \end_layout
 
+\begin_layout Itemize
+Blind is immutable, but analysis may change; even a nefarious actor may
+ be uncovered.
+\end_layout
+
+\begin_layout Itemize
+Shared responsibility; (acknowledge accepting referee?)
+\end_layout
+
+\begin_layout Itemize
+Requires no change to existing structures.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Weaknesses
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Still depends upon a strong/unmeasureable blind.
+\end_layout
+
+\end_deeper
 \begin_layout EndFrame
 
 \end_layout

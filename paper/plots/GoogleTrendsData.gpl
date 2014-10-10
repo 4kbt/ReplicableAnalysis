@@ -1,0 +1,19 @@
+set term postscript enhanced solid color eps size 3, 2 
+set output 'GoogleTrendsData.eps'
+
+set xlabel 'time (yr)'
+set ylabel 'search frequency (a. u.)'
+
+set title 'Google search trends'
+
+set key below noauto
+
+fn = 'GoogleTrendsData.dat'
+set logsc y
+pl [:2014.8]\
+	fn u ($1+$2/12+$3/12/30):7  w l lw 2 lt 3 tit 'neutrino' ,\
+	fn u ($1+$2/12+$3/12/30):8  w l lw 2 lt 1 tit 'graphene' ,\
+	fn u ($1+$2/12+$3/12/30):9  w l lw 2 lt 2 tit 'magnetoresistance',\
+	fn u ($1+$2/12+$3/12/30):10 w l lw 2 lt 5  tit 'Bill Clinton',\
+	fn u ($1+$2/12+$3/12/30):7  w l lw 2 lt 3 ,\
+	fn u ($1+$2/12+$3/12/30):8  w l lw 2 lt 1 

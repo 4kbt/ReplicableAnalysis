@@ -8,7 +8,8 @@ KNOWNEXTRACTED := $(addsuffix /*.tex, $(KNOWNEXTRACTED))
 
 all: presentation.pdf paper.pdf
 
-presentation.pdf : paper.pdf presentation.lyx
+presentation.pdf : paper.pdf presentation.lyx plots
+	$(MAKE) -C plots
 	$(LYX) presentation.lyx
 
 paper.pdf : paper.lyx $(EXTRACTEDDEPS) paper.bib gitOut.txt
