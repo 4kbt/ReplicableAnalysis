@@ -635,7 +635,7 @@ Plastic Cylinder Diameter
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
-filename "../extracted/cylDiamErr.tex"
+filename "../extracted/cylDiameter.tex"
 
 \end_inset
 
@@ -661,7 +661,7 @@ Plastic Cylinder Length
 \begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand input
-filename "../extracted/cylLengthErr.tex"
+filename "../extracted/cylLength.tex"
 
 \end_inset
 
