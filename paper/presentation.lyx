@@ -405,6 +405,19 @@ filename "../extracted/waterDensity.tex"
 \end_inset
 
 .
+ Expected: 
+\begin_inset Formula $997\pm3$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+kg/m
+\begin_inset Formula $^{3}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout EndFrame

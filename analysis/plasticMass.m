@@ -18,7 +18,7 @@ printSIErr( meanPlastic, stdPlastic, 2, 0, 'g', [HOMEDIR '/extracted/meanPlastic
 
 %a lack of noise is a bad thing
 if(stdPlastic < 1e-6)
-	stdPlastic = 0.0001; %minimum resolution of the scale
+	stdPlastic = scaleResolution; %minimum resolution of the scale
 end
 
 [plasticN, plasticX] = hist( plasticMeanDistribution, sqrt(nBootstrap));

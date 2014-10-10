@@ -42,8 +42,8 @@ printSI(plasticBuoyMass , 2, -3, 'g', [HOMEDIR '/extracted/plasticBuoyMass.tex']
 
 %Water mass determination
 meanPlasticErr = sqrt( stdPlastic^2 + plasticCalBuoyErr^2 + plasticBuoyMass^2 +...
-			 autoZeroing^2 + scaleResolution^2 + scaleNonlinearity^2);
-meanWetPlasticErr = sqrt(  stdWetPlastic^2 + autoZeroing^2 + scaleResolution^2 + scaleNonlinearity^2);
+			 autoZeroing^2 + scaleNonlinearity^2);
+meanWetPlasticErr = sqrt(  stdWetPlastic^2 + autoZeroing^2 + scaleNonlinearity^2);
 
 tareMass = meanWetPlastic - meanPlastic;
 tareMassErr = sqrt( meanWetPlasticErr^2 + meanPlasticErr^2);
@@ -57,7 +57,7 @@ waterMass = meanWater - tareMass;
 waterCalBuoyErr = waterMass * calBuoyShift * sqrt(2); %2 from subtraction
 printSI(waterCalBuoyErr, 1, -3, 'g', [HOMEDIR '/extracted/waterCalBuoyErr.tex']);
 
-waterMassErr = sqrt(stdWater^2 + tareMassErr^2 + 2*( autoZeroing^2 + scaleResolution^2 + scaleNonlinearity^2) ...
+waterMassErr = sqrt(stdWater^2 + tareMassErr^2 + 2*( autoZeroing^2 + scaleNonlinearity^2) ...
 			+ dissolvedSolidsMass^2 + waterCalBuoyErr^2 );
 
 printSIErr(waterMass, waterMassErr, 2, 0, 'g', [HOMEDIR '/extracted/waterMass.tex']);

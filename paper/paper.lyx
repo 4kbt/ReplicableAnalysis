@@ -2,7 +2,7 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass revtex4
+\textclass article
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -239,16 +239,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Pictures/small/IMG_9417.JPG
-	width 30page%
-	rotateAngle 270
-
-\end_inset
-
-
-\begin_inset Graphics
 	filename ../Pictures/small/IMG_9415.JPG
-	width 30page%
+	width 60page%
 	rotateAngle 90
 
 \end_inset
@@ -421,7 +413,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="17" columns="2">
+<lyxtabular version="3" rows="16" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -514,32 +506,6 @@ Scale Hysteresis
 \begin_inset CommandInset include
 LatexCommand input
 filename "../extracted/hysteresisErr.tex"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Finite Scale Resolution
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/scaleResolution.tex"
 
 \end_inset
 
@@ -879,39 +845,6 @@ filename "../extracted/waterDensity.tex"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Section
-Conclusion
-\end_layout
-
-\begin_layout Standard
-Apparatus: An American Weigh Scales 
-\begin_inset Quotes eld
-\end_inset
-
-Blade
-\begin_inset Quotes erd
-\end_inset
-
- (AMW-BLADE400, 400
-\begin_inset space ~
-\end_inset
-
-g
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Formula $\times0.1$
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-g capacity/resolution) scale 
 \end_layout
 
 \end_body
