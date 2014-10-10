@@ -400,7 +400,7 @@ Measurement
 \end_layout
 
 \begin_layout Subsection
-Error Budget
+Experimental parameters
 \end_layout
 
 \begin_layout Standard
@@ -823,7 +823,7 @@ filename "../extracted/waterDensity.tex"
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Error Budget
+Experimental Parameters
 \end_layout
 
 \end_inset

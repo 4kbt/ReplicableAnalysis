@@ -804,16 +804,8 @@ filename "../extracted/waterDensity.tex"
 \end_layout
 
 \begin_layout Standard
-As measured by this analysis, the density of the Seattle City Water sample
- was 
-\begin_inset CommandInset include
-LatexCommand input
-filename "../extracted/waterDensity.tex"
-
-\end_inset
-
-.
- Expected: 
+\align center
+Expected: 
 \begin_inset Formula $997\pm3$
 \end_inset
 
@@ -1324,6 +1316,23 @@ filename "../extracted/waterDensity.tex"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
+Expected: 
+\begin_inset Formula $997\pm3$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+kg/m
+\begin_inset Formula $^{3}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout EndFrame
