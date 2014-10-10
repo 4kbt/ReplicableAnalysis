@@ -38,10 +38,10 @@ printSI(plasticCalBuoyErr, 1, -3, 'g', [HOMEDIR '/extracted/plasticCalBuoyErr.te
 %Plastic buoyancy correction
 plasticBuoyMass = cylVolume * airDensity;
 printSI(plasticBuoyMass , 2, -3, 'g', [HOMEDIR '/extracted/plasticBuoyMass.tex']); 
-
+meanPlastic = meanPlastic + plasticBuoyMass;
 
 %Water mass determination
-meanPlasticErr = sqrt( stdPlastic^2 + plasticCalBuoyErr^2 + plasticBuoyMass^2 +...
+meanPlasticErr = sqrt( stdPlastic^2 + plasticCalBuoyErr^2  +...
 			 autoZeroing^2 + scaleNonlinearity^2);
 meanWetPlasticErr = sqrt(  stdWetPlastic^2 + autoZeroing^2 + scaleNonlinearity^2);
 
