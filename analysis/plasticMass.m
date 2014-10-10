@@ -14,7 +14,7 @@ w = w( max(abs(w')) < 1e80 ,:);
 
 [meanPlastic stdPlastic plasticMeanDistribution] = bootstrapMean(w(:,DiffWeightColumn), nBootstrap);
 
-printSIErr( meanPlastic, stdPlastic, 2, 0, 'g', [HOMEDIR '/extracted/waterDiff.tex']);
+printSIErr( meanPlastic, stdPlastic, 2, 0, 'g', [HOMEDIR '/extracted/meanPlasticStatistical.tex']);
 
 %a lack of noise is a bad thing
 if(stdPlastic < 1e-6)

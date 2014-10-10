@@ -31,6 +31,7 @@ printSI(dissolvedSolidsMass, 1, -3,'g', [HOMEDIR '/extracted/dissolvedSolidsMass
 
 %Calibration-mass buoyancy uncertainty
 calBuoyShift = calMassVolume * airDensity / calibrationMass;
+printSigNumber(calBuoyShift , [HOMEDIR '/extracted/calBuoyShift.tex'],1); 
 plasticCalBuoyErr = meanPlastic * calBuoyShift;
 printSI(plasticCalBuoyErr, 1, -3, 'g', [HOMEDIR '/extracted/plasticCalBuoyErr.tex']);
 
@@ -40,9 +41,15 @@ printSI(plasticBuoyMass , 2, -3, 'g', [HOMEDIR '/extracted/plasticBuoyMass.tex']
 
 
 %Water mass determination
+meanPlasticErr = sqrt( stdPlastic^2 + plasticCalBuoyErr^2 + plasticBuoyMass^2 +...
+			 autoZeroing^2 + scaleResolution^2 + scaleNonlinearity^2);
+meanWetPlasticErr = sqrt(  stdWetPlastic^2 + autoZeroing^2 + scaleResolution^2 + scaleNonlinearity^2);
+
 tareMass = meanWetPlastic - meanPlastic;
-tareMassErr = sqrt( stdWetPlastic^2 + stdPlastic^2 + plasticCalBuoyErr^2 + plasticBuoyMass^2 +
-			autoZeroing^2 + scaleResolution^2 + scaleNonlinearity^2);
+tareMassErr = sqrt( meanWetPlasticErr^2 + meanPlasticErr^2);
+
+printSIErr(meanPlastic, meanPlasticErr, 2, 0, 'g', [HOMEDIR '/extracted/meanPlastic.tex']);
+
 
 waterMass = meanWater - tareMass;
 
@@ -53,8 +60,10 @@ printSI(waterCalBuoyErr, 1, -3, 'g', [HOMEDIR '/extracted/waterCalBuoyErr.tex'])
 waterMassErr = sqrt(stdWater^2 + tareMassErr^2 + 2*( autoZeroing^2 + scaleResolution^2 + scaleNonlinearity^2) ...
 			+ dissolvedSolidsMass^2 + waterCalBuoyErr^2 );
 
+printSIErr(waterMass, waterMassErr, 2, 0, 'g', [HOMEDIR '/extracted/waterMass.tex']);
 
 
+%Density determination
 relativeDensity = meanPlastic/waterMass
 
 waterDensity = waterMass/cylVolume
