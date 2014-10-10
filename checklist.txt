@@ -1,0 +1,9 @@
+Chalk
+Calipers
+Puck
+Github window
+Gnome-Terminal
+create directory, ls
+pregame git clone statement
+
+
