@@ -5,5 +5,4 @@ Github window
 Gnome-Terminal
 create directory, ls
 pregame git clone statement
-
-
+show empty workspaces?
