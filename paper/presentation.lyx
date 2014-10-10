@@ -173,7 +173,7 @@ So, how exactly did you come up with that number?
 \end_layout
 
 \begin_layout Itemize
-Only recently become practical
+Only become practical in last 10-20 years
 \end_layout
 
 \begin_deeper
@@ -187,6 +187,24 @@ Fast internet
 
 \begin_layout Itemize
 Great software
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Many have written on reproducible research software: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+The case for open computer programs, 
+\emph default
+Ince, Hatton, and Graham-Cumming, etc...
+\end_layout
+
+\begin_layout Itemize
+http://researchcompendia.org/ , etc....
 \end_layout
 
 \end_deeper
@@ -369,20 +387,12 @@ Bootstrapping and Linearity
 \end_layout
 
 \begin_layout BeginFrame
-Error Budget
+Result....
+ before unblinding
 \end_layout
 
 \begin_layout Standard
-askljdf
-\end_layout
-
-\begin_layout EndFrame
-
-\end_layout
-
-\begin_layout BeginFrame
-Result....
- before unblinding
+Error Table
 \end_layout
 
 \begin_layout Standard
@@ -402,15 +412,7 @@ filename "../extracted/waterDensity.tex"
 \end_layout
 
 \begin_layout BeginFrame
-How does the software work?
-\end_layout
-
-\begin_layout Itemize
-Empty directory
-\end_layout
-
-\begin_layout Itemize
-Start demo
+Freely available.
 \end_layout
 
 \begin_layout Itemize
@@ -572,17 +574,7 @@ Blind Review
 \end_layout
 
 \begin_layout Itemize
-It is possible for a measurement to remain blind until all concerned parties
- are convinced of correct execution.
-\end_layout
-
-\begin_layout Itemize
-Irreversible unblinding can be distributed; it doesn't require a conference.
-\end_layout
-
-\begin_layout Itemize
-Opinion: Correct execution of a measurement does not depend upon its final
- central value.
+How do I know when to stop looking for systematics in a null measurement?
 \end_layout
 
 \begin_layout Itemize
@@ -591,10 +583,29 @@ Reproducibility problem
 
 \begin_deeper
 \begin_layout Itemize
-Medical studies are
+\begin_inset Formula $G$
+\end_inset
+
+ has one, but many others do/did too (Neutron lifetime, etc.)
+\end_layout
+
+\begin_layout Itemize
+Amgen (Begley and Ellis) found that 47/53 
+\begin_inset Quotes eld
+\end_inset
+
+landmark
+\begin_inset Quotes erd
+\end_inset
+
+ cancer papers could not be reproduced
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Too few negative results in the literature.
+\end_layout
+
 \begin_layout EndFrame
 
 \end_layout
@@ -621,7 +632,7 @@ If there's a gross error after the opening of a blind, you'll revisit the
 \end_layout
 
 \begin_layout Itemize
-Solution: 
+Agreed: 
 \series bold
 \color blue
 Unblinding must be irreversibly public.
@@ -641,7 +652,7 @@ Just because a measurement is blind doesn't mean that it's correct.
 
 \begin_deeper
 \begin_layout Itemize
-Invoking blindness is insufficient to guarantee anything.
+Blindness alone is insufficient to guarantee anything.
 \end_layout
 
 \begin_layout Itemize
@@ -649,6 +660,7 @@ Agreed:
 \series bold
 \color blue
 There is no substitute for quality work.
+ Blinds are tools to temper our own flaws.
 \end_layout
 
 \end_deeper
@@ -669,7 +681,7 @@ Comparison with known results yields efficiency gains.
 \end_layout
 
 \begin_layout Itemize
-Solution: 
+Agreed: 
 \series bold
 \color blue
 Yep.
@@ -771,6 +783,11 @@ Shared responsibility; (acknowledge accepting referee?)
 Requires no change to existing structures.
 \end_layout
 
+\begin_layout Itemize
+Results accepted for quality, sensitivity and import, not statistical significan
+ce of the result.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Weaknesses
@@ -779,6 +796,10 @@ Weaknesses
 \begin_deeper
 \begin_layout Itemize
 Still depends upon a strong/unmeasureable blind.
+\end_layout
+
+\begin_layout Itemize
+Requires time and care.
 \end_layout
 
 \end_deeper
