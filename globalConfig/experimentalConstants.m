@@ -52,6 +52,22 @@ printSIErr( cylVolume*mm3Factor, cylVolumeErr * mm3Factor,
 printSIErr( calMassVolume*mm3Factor, calMassVolumeErr * mm3Factor,
 		 2, -3, 'm$^{3}$', [HOMEDIR '/extracted/calMassVolume.tex'] );
 
+%uncertainty terms
+airDensity = 1.225;
+printSI(airDensity, 4, 3, 'g/m$^{3}$', [HOMEDIR '/extracted/airDensity.tex']);
+
+
+plasticExpansionCoefficient = 150e-6;
+printSigNumber(plasticExpansionCoefficient, [HOMEDIR '/extracted/plasticExpansionCoefficient.tex'], 2);
+
+scaleResolution = 0.1e-3;
+printSI(scaleResolution, 1, 0,'g', [HOMEDIR '/extracted/scaleResolution.tex']);
+
+autoZeroing = 0.1e-3;
+printSI(autoZeroing, 1, 0,'g', [HOMEDIR '/extracted/autoZeroing.tex']);
+
+scaleNonlinearity = 0.1e-3;
+printSI(scaleNonlinearity, 1,0,'g',[HOMEDIR '/extracted/scaleNonlinearity.tex']);
 
 %%%% analysis parameters
 

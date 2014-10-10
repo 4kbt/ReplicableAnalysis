@@ -412,10 +412,6 @@ Error Budget
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
 \align center
 \begin_inset Float table
 wide false
@@ -425,9 +421,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="3">
+<lyxtabular version="3" rows="11" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
@@ -440,20 +435,11 @@ Type
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Correction
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Uncertainty
+Effect
 \end_layout
 
 \end_inset
@@ -464,16 +450,7 @@ Uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-Thermal expansion of block
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+Thermal volumetric expansion of puck
 \end_layout
 
 \end_inset
@@ -482,35 +459,12 @@ Thermal expansion of block
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Thermal expansion of water
-\end_layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/ThermVolumetricExpansion.tex"
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -527,19 +481,16 @@ Dissolved solids/impurities
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/scaleResolution.tex"
+
+\end_inset
+
 
 \end_layout
 
@@ -552,15 +503,6 @@ Dissolved solids/impurities
 
 \begin_layout Plain Layout
 Scale Hysteresis
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -591,19 +533,16 @@ Finite Scale Resolution
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/scaleResolution.tex"
+
+\end_inset
+
 
 \end_layout
 
@@ -620,19 +559,16 @@ Auto-zeroing
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/autoZeroing.tex"
+
+\end_inset
+
 
 \end_layout
 
@@ -644,16 +580,7 @@ Auto-zeroing
 \begin_inset Text
 
 \begin_layout Plain Layout
-Buoyancy correction, calibration mass
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+Buoyancy, calibration mass
 \end_layout
 
 \end_inset
@@ -662,7 +589,7 @@ Buoyancy correction, calibration mass
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+(percentage of each mass)?
 \end_layout
 
 \end_inset
@@ -673,16 +600,7 @@ Buoyancy correction, calibration mass
 \begin_inset Text
 
 \begin_layout Plain Layout
-Buoyancy correction, plastic mass
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+Buoyancy, plastic mass
 \end_layout
 
 \end_inset
@@ -691,6 +609,12 @@ Buoyancy correction, plastic mass
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/plasticBuoyMass.tex"
+
+\end_inset
+
 
 \end_layout
 
@@ -707,11 +631,28 @@ Scale nonlinearity
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/scaleNonlinearity.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Plastic Puck Diameter
 \end_layout
 
 \end_inset
@@ -720,6 +661,12 @@ Scale nonlinearity
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/cylDiamErr.tex"
+
+\end_inset
+
 
 \end_layout
 
@@ -731,16 +678,7 @@ Scale nonlinearity
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+Plastic Puck Length
 \end_layout
 
 \end_inset
@@ -749,6 +687,12 @@ Scale nonlinearity
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+filename "../extracted/cylLengthErr.tex"
+
+\end_inset
+
 
 \end_layout
 
@@ -768,10 +712,6 @@ Error Budget
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
