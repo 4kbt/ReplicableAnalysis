@@ -1,6 +1,6 @@
 %Hands back the uncertainty on V given an expansion coefficient and a single-sided temperature uncertainty
 function Ve = thermalExpansionError(V, expansionCoeff, tempRange)
-	l = V^(-1/3);
+	l = V^(1/3);
 	LP = l * (1 + expansionCoeff * tempRange ) ;
 	LM = l * (1 - expansionCoeff * tempRange ) ;
 	VP = LP^3;
