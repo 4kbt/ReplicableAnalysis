@@ -7,6 +7,29 @@ ReplicableAnalysis
 
 This repository documents a blind replicable-analysis measurement of the density of water, to be unveiled at the NIST Big G meeting in October 2014.
 
-To build this project, you need GNU make, GNU Octave, Gnuplot, and the usual complement of UNIX tools present on a Linux system. Clone the repository, and run 'make'.
+To build this project, you need GNU make, GNU Octave, Gnuplot, Imagemagick, LyX, and the usual complement of UNIX tools present on a Linux system. Clone the repository, and run 'make'.
 
+###### Build environment used for the NIST conference unblinding: 
+* Debian GNU/Linux OS (testing)
 
+* LyX 2.0.6 (LyX 2.1.2 may yield one mis-rotated figure)
+
+* Octave 3.8.2, with similar octave-forge
+
+* git 2.1.0
+
+* GNU Make 4.0
+
+* Gnuplot 4.6 patchlevel 5
+
+* ImageMagick 6.8.9-6 Q16
+
+* sed 4.2.2
+
+* head, echo, wc, date : coreutils 8.23
+
+* bash 4.3.25(1)
+
+* GNU grep 2.20
+
+* GNU awk 4.1.1
